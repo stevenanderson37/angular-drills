@@ -1,6 +1,10 @@
-<html>
-	<body>
-	
+<html ng-app="myApp">
+	<body ng-controller="mainController">
+		<h1>{{name}}</h1>
+		<input ng-model="newName" />
+		<br>
+		<button ng-click="changeName(newName)" >Change Name</button>
+		
 		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.js"></script>
 		<script src="app.js"></script>
 		<script src="controller.js"></script>
